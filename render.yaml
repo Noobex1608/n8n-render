@@ -32,13 +32,13 @@ services:
       - key: DB_TYPE
         value: postgresdb
       - key: DB_POSTGRESDB_HOST
-        sync: false
+        value: aws-1-us-east-1.pooler.supabase.com
       - key: DB_POSTGRESDB_PORT
-        sync: false
+        value: 6543
       - key: DB_POSTGRESDB_DATABASE
-        sync: false
+        value: postgres
       - key: DB_POSTGRESDB_USER
-        sync: false
+        value: postgres.jovwozktuvlalbodxqzw
       - key: DB_POSTGRESDB_PASSWORD
         sync: false
       - key: DB_POSTGRESDB_SCHEMA
