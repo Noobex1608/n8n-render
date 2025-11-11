@@ -29,17 +29,18 @@ services:
         value: "false"
 
       # Configuración de la base de datos PostgreSQL (Supabase)
+      # Mapea SUPABASE_* a DB_POSTGRESDB_* que n8n espera
       - key: DB_TYPE
         value: postgresdb
       - key: DB_POSTGRESDB_HOST
-        value: aws-1-us-east-1.pooler.supabase.com
+        fromGroup: SUPABASE_HOST
       - key: DB_POSTGRESDB_PORT
-        value: 6543
+        fromGroup: SUPABASE_PORT
       - key: DB_POSTGRESDB_DATABASE
-        value: postgres
+        fromGroup: SUPABASE_DB
       - key: DB_POSTGRESDB_USER
-        value: postgres.jovwozktuvlalbodxqzw
+        fromGroup: SUPABASE_USER
       - key: DB_POSTGRESDB_PASSWORD
-        sync: false
+        fromGroup: SUPABASE_PASSWORD
       - key: DB_POSTGRESDB_SCHEMA
         value: public
