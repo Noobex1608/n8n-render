@@ -24,7 +24,7 @@ services:
       - key: N8N_RUNNERS_ENABLED
         value: "true"
       - key: N8N_ENCRYPTION_KEY
-        generateValue: true
+        sync: false
       - key: N8N_ENFORCE_SETTINGS_FILE_PERMISSIONS
         value: "false"
       - key: N8N_BLOCK_ENV_ACCESS_IN_NODE
