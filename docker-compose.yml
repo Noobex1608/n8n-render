@@ -4,13 +4,13 @@ services:
     ports:
       - "5678:5678"
     environment:
-      - DB_TYPE=postgres
-      - DB_POSTGRES_HOST=${SUPABASE_HOST:-aws-1-us-east-2.pooler.supabase.com}
-      - DB_POSTGRES_PORT=${SUPABASE_PORT:-6543}
-      - DB_POSTGRES_DATABASE=${SUPABASE_DB:-postgres}
-      - DB_POSTGRES_USER=${SUPABASE_USER:-postgres.pjgpqoqjufkhnsmeslcw}
-      - DB_POSTGRES_PASSWORD=${SUPABASE_PASSWORD:-steven16082004.}
-      - DB_POSTGRES_SCHEMA=public
+      - DB_TYPE=postgresdb
+      - DB_POSTGRESDB_HOST=${SUPABASE_HOST:-aws-1-us-east-1.pooler.supabase.com}
+      - DB_POSTGRESDB_PORT=${SUPABASE_PORT:-6543}
+      - DB_POSTGRESDB_DATABASE=${SUPABASE_DB:-postgres}
+      - DB_POSTGRESDB_USER=${SUPABASE_USER:-postgres.jovwozktuvlalbodxqzw}
+      - DB_POSTGRESDB_PASSWORD=${SUPABASE_PASSWORD:-n8nsupabase}
+      - DB_POSTGRESDB_SCHEMA=public
       - GENERIC_TIMEZONE=${GENERIC_TIMEZONE:-America/Guayaquil}
       - TZ=${TZ:-America/Guayaquil}
       - N8N_ENCRYPTION_KEY=my_local_key_123
